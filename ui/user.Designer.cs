@@ -53,8 +53,11 @@ namespace personal_info.ui
             this.genderMan = new System.Windows.Forms.RadioButton();
             this.district = new System.Windows.Forms.ComboBox();
             this.city = new System.Windows.Forms.ComboBox();
+            this.about = new System.Windows.Forms.GroupBox();
+            this.labelAbout = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.personalInfo.SuspendLayout();
+            this.about.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -79,6 +82,7 @@ namespace personal_info.ui
             // 
             // personalInfo
             // 
+            this.personalInfo.Controls.Add(this.about);
             this.personalInfo.Controls.Add(this.show);
             this.personalInfo.Controls.Add(this.clear);
             this.personalInfo.Controls.Add(this.save);
@@ -101,6 +105,7 @@ namespace personal_info.ui
             resources.ApplyResources(this.personalInfo, "personalInfo");
             this.personalInfo.Name = "personalInfo";
             this.personalInfo.TabStop = false;
+            this.personalInfo.Enter += new System.EventHandler(this.personalInfo_Enter);
             // 
             // show
             // 
@@ -215,6 +220,18 @@ namespace personal_info.ui
             resources.ApplyResources(this.city, "city");
             this.city.Name = "city";
             // 
+            // about
+            // 
+            this.about.Controls.Add(this.labelAbout);
+            resources.ApplyResources(this.about, "about");
+            this.about.Name = "about";
+            this.about.TabStop = false;
+            // 
+            // labelAbout
+            // 
+            resources.ApplyResources(this.labelAbout, "labelAbout");
+            this.labelAbout.Name = "labelAbout";
+            // 
             // User
             // 
             resources.ApplyResources(this, "$this");
@@ -227,6 +244,8 @@ namespace personal_info.ui
             this.menuStrip1.PerformLayout();
             this.personalInfo.ResumeLayout(false);
             this.personalInfo.PerformLayout();
+            this.about.ResumeLayout(false);
+            this.about.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,5 +276,7 @@ namespace personal_info.ui
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Button show;
         private System.Windows.Forms.Button clear;
+        private System.Windows.Forms.GroupBox about;
+        private System.Windows.Forms.Label labelAbout;
     }
 }

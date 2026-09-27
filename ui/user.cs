@@ -66,5 +66,10 @@ namespace personal_info.ui
         {
 
         }
+
+        private void personalInfo_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
