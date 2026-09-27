@@ -58,6 +58,8 @@ namespace personal_info.ui
             this.label11 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.registerDate = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // save
@@ -66,7 +68,7 @@ namespace personal_info.ui
             this.save.Image = ((System.Drawing.Image)(resources.GetObject("save.Image")));
             this.save.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.save.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.save.Location = new System.Drawing.Point(118, 420);
+            this.save.Location = new System.Drawing.Point(76, 454);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(61, 53);
             this.save.TabIndex = 34;
@@ -80,7 +82,7 @@ namespace personal_info.ui
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(89, 388);
+            this.label7.Location = new System.Drawing.Point(89, 415);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 13);
             this.label7.TabIndex = 33;
@@ -92,7 +94,7 @@ namespace personal_info.ui
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(109, 225);
+            this.label6.Location = new System.Drawing.Point(109, 252);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 13);
             this.label6.TabIndex = 32;
@@ -104,7 +106,7 @@ namespace personal_info.ui
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(90, 252);
+            this.label5.Location = new System.Drawing.Point(90, 279);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 31;
@@ -113,7 +115,7 @@ namespace personal_info.ui
             // 
             // addressOther
             // 
-            this.addressOther.Location = new System.Drawing.Point(143, 276);
+            this.addressOther.Location = new System.Drawing.Point(143, 303);
             this.addressOther.Name = "addressOther";
             this.addressOther.Size = new System.Drawing.Size(149, 106);
             this.addressOther.TabIndex = 30;
@@ -125,7 +127,7 @@ namespace personal_info.ui
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(50, 279);
+            this.label4.Location = new System.Drawing.Point(50, 306);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 13);
             this.label4.TabIndex = 29;
@@ -196,7 +198,7 @@ namespace personal_info.ui
             // 
             this.genderNonBin.AutoSize = true;
             this.genderNonBin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.genderNonBin.Location = new System.Drawing.Point(270, 388);
+            this.genderNonBin.Location = new System.Drawing.Point(270, 415);
             this.genderNonBin.Name = "genderNonBin";
             this.genderNonBin.Size = new System.Drawing.Size(74, 17);
             this.genderNonBin.TabIndex = 22;
@@ -209,7 +211,7 @@ namespace personal_info.ui
             // 
             this.genderWomen.AutoSize = true;
             this.genderWomen.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.genderWomen.Location = new System.Drawing.Point(148, 388);
+            this.genderWomen.Location = new System.Drawing.Point(148, 415);
             this.genderWomen.Name = "genderWomen";
             this.genderWomen.Size = new System.Drawing.Size(62, 17);
             this.genderWomen.TabIndex = 21;
@@ -222,7 +224,7 @@ namespace personal_info.ui
             // 
             this.genderMan.AutoSize = true;
             this.genderMan.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.genderMan.Location = new System.Drawing.Point(218, 388);
+            this.genderMan.Location = new System.Drawing.Point(218, 415);
             this.genderMan.Name = "genderMan";
             this.genderMan.Size = new System.Drawing.Size(46, 17);
             this.genderMan.TabIndex = 20;
@@ -234,7 +236,7 @@ namespace personal_info.ui
             // district
             // 
             this.district.FormattingEnabled = true;
-            this.district.Location = new System.Drawing.Point(143, 249);
+            this.district.Location = new System.Drawing.Point(143, 276);
             this.district.Name = "district";
             this.district.Size = new System.Drawing.Size(121, 21);
             this.district.TabIndex = 19;
@@ -243,7 +245,7 @@ namespace personal_info.ui
             // city
             // 
             this.city.FormattingEnabled = true;
-            this.city.Location = new System.Drawing.Point(143, 222);
+            this.city.Location = new System.Drawing.Point(143, 249);
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(121, 21);
             this.city.TabIndex = 18;
@@ -255,7 +257,7 @@ namespace personal_info.ui
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(237, 420);
+            this.button1.Location = new System.Drawing.Point(233, 454);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 53);
             this.button1.TabIndex = 35;
@@ -367,11 +369,35 @@ namespace personal_info.ui
             this.textBox2.TabIndex = 45;
             this.textBox2.TextChanged += new System.EventHandler(this.studentNumber_TextChanged);
             // 
+            // registerDate
+            // 
+            this.registerDate.Enabled = false;
+            this.registerDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.registerDate.Location = new System.Drawing.Point(143, 222);
+            this.registerDate.Name = "registerDate";
+            this.registerDate.Size = new System.Drawing.Size(98, 20);
+            this.registerDate.TabIndex = 47;
+            this.registerDate.Value = new System.DateTime(2026, 9, 27, 0, 0, 0, 0);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label12.Location = new System.Drawing.Point(28, 228);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(109, 13);
+            this.label12.TabIndex = 46;
+            this.label12.Text = "Registiration Date";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 485);
+            this.ClientSize = new System.Drawing.Size(355, 530);
+            this.Controls.Add(this.registerDate);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label11);
@@ -436,5 +462,7 @@ namespace personal_info.ui
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.DateTimePicker registerDate;
+        private System.Windows.Forms.Label label12;
     }
 }
