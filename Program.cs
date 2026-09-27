@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using personal_info.ui;
 
 namespace personal_info
 {
@@ -16,7 +17,7 @@ namespace personal_info
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new basic());
+            Application.Run(new ui.User());
         }
     }
 }
