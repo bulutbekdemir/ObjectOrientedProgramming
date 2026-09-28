@@ -106,5 +106,10 @@ namespace personal_info.ui
         {
 
         }
+
+        private void Student_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

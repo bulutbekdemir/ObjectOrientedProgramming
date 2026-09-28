@@ -9,7 +9,7 @@ namespace personal_info.model
     public enum Gender
     {
         Male,
-        Female,
+        Woman,
         NonBinary
     }
 

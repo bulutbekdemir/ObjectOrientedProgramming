@@ -82,7 +82,6 @@ namespace personal_info.ui
             // 
             // personalInfo
             // 
-            this.personalInfo.Controls.Add(this.about);
             this.personalInfo.Controls.Add(this.show);
             this.personalInfo.Controls.Add(this.clear);
             this.personalInfo.Controls.Add(this.save);
@@ -157,7 +156,6 @@ namespace personal_info.ui
             // 
             resources.ApplyResources(this.phone, "phone");
             this.phone.Name = "phone";
-            this.phone.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -198,7 +196,6 @@ namespace personal_info.ui
             this.genderWomen.Name = "genderWomen";
             this.genderWomen.TabStop = true;
             this.genderWomen.UseVisualStyleBackColor = true;
-            this.genderWomen.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // genderMan
             // 
@@ -206,7 +203,6 @@ namespace personal_info.ui
             this.genderMan.Name = "genderMan";
             this.genderMan.TabStop = true;
             this.genderMan.UseVisualStyleBackColor = true;
-            this.genderMan.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // district
             // 
@@ -219,6 +215,7 @@ namespace personal_info.ui
             this.city.FormattingEnabled = true;
             resources.ApplyResources(this.city, "city");
             this.city.Name = "city";
+            this.city.SelectedIndexChanged += new System.EventHandler(this.city_SelectedIndexChanged);
             // 
             // about
             // 
@@ -226,18 +223,21 @@ namespace personal_info.ui
             resources.ApplyResources(this.about, "about");
             this.about.Name = "about";
             this.about.TabStop = false;
+            this.about.Enter += new System.EventHandler(this.about_Enter);
             // 
             // labelAbout
             // 
             resources.ApplyResources(this.labelAbout, "labelAbout");
             this.labelAbout.Name = "labelAbout";
+            this.labelAbout.Click += new System.EventHandler(this.labelAbout_Click);
             // 
             // User
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.personalInfo);
+            this.Controls.Add(this.about);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.personalInfo);
             this.Name = "User";
             this.Load += new System.EventHandler(this.user_Load);
             this.menuStrip1.ResumeLayout(false);
