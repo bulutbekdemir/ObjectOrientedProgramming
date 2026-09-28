@@ -177,9 +177,9 @@ namespace personal_info.ui
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label2.Location = new System.Drawing.Point(45, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.Size = new System.Drawing.Size(97, 13);
             this.label2.TabIndex = 24;
-            this.label2.Text = "Name Surname";
+            this.label2.Text = "Name Surname*";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -189,9 +189,9 @@ namespace personal_info.ui
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(6, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 13);
+            this.label1.Size = new System.Drawing.Size(136, 13);
             this.label1.TabIndex = 23;
-            this.label1.Text = "Turkish Citizenship ID";
+            this.label1.Text = "Turkish Citizenship ID*";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // genderNonBin
@@ -261,7 +261,7 @@ namespace personal_info.ui
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 53);
             this.button1.TabIndex = 35;
-            this.button1.Text = "Save";
+            this.button1.Text = "Clear";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.clear_Click);
@@ -347,9 +347,9 @@ namespace personal_info.ui
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label11.Location = new System.Drawing.Point(70, 66);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(67, 13);
+            this.label11.Size = new System.Drawing.Size(72, 13);
             this.label11.TabIndex = 43;
-            this.label11.Text = "Class / No";
+            this.label11.Text = "Class / No*";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboBox3
@@ -426,6 +426,7 @@ namespace personal_info.ui
             this.Controls.Add(this.genderMan);
             this.Controls.Add(this.district);
             this.Controls.Add(this.city);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Student";
             this.Text = "Student";
             this.Load += new System.EventHandler(this.Student_Load);

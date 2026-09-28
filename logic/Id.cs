@@ -10,20 +10,19 @@ namespace personal_info.logic
     {
         public bool IsItId(string id)
         {
-            bool err = true;
+            if (string.IsNullOrWhiteSpace(id))
+                return false;
 
-            if (string.IsNullOrEmpty(id) || id.Length != 11)
-                err = false;
-
+            if (id.Length != 11)
+                return false;
 
             if (!id.All(char.IsDigit))
-                err = false;
-
+                return false;
 
             if (id[0] == '0')
-                err = false;
+                return false;
 
-            return err;
+            return true;
         }
 
         /// <summary> 

@@ -17,7 +17,7 @@ namespace personal_info
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ui.User());
+            Application.Run(new ui.intro());
         }
     }
 }
